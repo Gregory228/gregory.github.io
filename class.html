@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <meta name="view-port" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="Mainstylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Comfortaa|Dancing+Script|Indie+Flower|Kaushan+Script|Libre+Baskerville|Lobster|Old+Standard+TT|Pacifico|Poiret+One|Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Сайт 11 класса</title>
+<link rel="stylesheet" href="media/forMain2.css">
+<link rel="stylesheet" href="media/forMain.css">
+</head>
+	<body>
+		<header>
+			<h1>•Летопись 11 класса•<br>•Еврейской школы "Ор Авнер"•<br>•г.Кривого Рога•</h1>
+		</header>
+<center>
+		<div class="nav-wrapper">
+				<nav class="nav-menu">
+					<ul class="clearfix">
+						<li>• Главное меню  •
+         						<ul class="sub-menu">
+								<li id="vert"><a href="#" class="butt" id="an">Об учителе</a></li>
+								<li id="vert"><a href="#" class="butt" id="an">Достижения</a></li>
+								<li id="vert"><a href="classmates/allpeople.html" class="butt" id="an">Ученики</a></li>
+								<li id="vert"><a href="allparentsgallery.html" class="butt" id="an">О родителях</a></li>
+         						</ul>
+         					</li>
+         					<li>•Наша галерея•
+         						<ul class="sub-menu" id="left">
+            							<li id="vert"><a href="galerey.html" class="butt" id="an">Фотографии</a></li>
+            							<li id="vert"><a href="#" class="butt" id="an">Видео</a></li>
+        						</ul>
+         					</li>
+      					</ul>
+   				</nav>
+			</div>
+		<script src="animated.js"></script><!--скрипт для пульсации кнопоньки при нажатии-->
+		
+		<center> <!--SLIDER-->
+			<div class="sl_ctr">
+				<div class="sldr">
+					<img src="imgs/1.jpg" alt="1" title="картинка 1">
+					<img src="imgs/2.jpg" alt="2" title="картинка 2">
+					<img src="imgs/3.jpg" alt="3" title="картинка 3">
+					<img src="imgs/4.jpg" alt="4" title="картинка 4">
+					<img src="imgs/5.jpg" alt="4" title="картинка 5">
+				</div>
+				<div class="prv_b"></div>
+				<div class="nxt_b"></div>
+			</div>
+		</center>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+$(function() {
+var sldr = $('.sldr'),
+sldrContent = sldr.html(),
+slideWidth = $('.sl_ctr').outerWidth(),
+slideCount = $('.sldr img').length,
+prv_b = $('.prv_b'),
+nxt_b = $('.nxt_b'),
+sldrInterval = 9000,
+animateTime = 1500,
+course = 1,
+margin = - slideWidth;
+$('.sldr img:last').clone().prependTo('.sldr');$('.sldr img').eq(1).clone().appendTo('.sldr');$('.sldr').css('margin-left',-slideWidth);function nxt_bSlide(){interval=window.setInterval(animate,sldrInterval)}function animate(){if(margin==-slideCount*slideWidth-slideWidth){sldr.css({'marginLeft':-slideWidth});margin=-slideWidth*2}else if(margin==0&&course==-1){sldr.css({'marginLeft':-slideWidth*slideCount});margin=-slideWidth*slideCount+slideWidth}else{margin=margin-slideWidth*(course)}sldr.animate({'marginLeft':margin},animateTime)}function sldrStop(){window.clearInterval(interval)}prv_b.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=-1;animate();course=course2});nxt_b.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=1;animate();course=course2});sldr.add(nxt_b).add(prv_b).hover(function(){sldrStop()},nxt_bSlide);nxt_bSlide()});
+</script>
+</center><!--SLIDER-->
+
+<div class="content"></div>
+
+    <footer id="myFooter">
+        <div class="container">
+          <center>
+            <ul>
+                <li ><span class="bld">&#8595</span><em id="mini">Инфо о создателе • Обратная связь • И т.д. • И т.п.</em><span class="bld">&#8595</span></li>
+            </ul>
+          </center>
+        <p class="footer-copyright">© 2018 Copyright Text (для красоты)</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://vk.com/id143035445" class="social-icons"><i class="fa fa-vk"></i></a>
+            <a href="https://instagram.com/gregory_coralclub" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="romeo.kadaner" class="social-icons"><i class="fa fa-skype"></i></a>
+			      <a href="+380 93 868 03 60
+			               +380 67 973 02 62" class="social-icons"><i class="fa fa-whatsapp"></i></a>
+			      <a href="romeo.kadaner@hotmail.com" class="social-icons"><i class="fa fa-windows"></i></a>
+			      <a href="#" class="social-icons"><i class="fa fa-google"></i></a>
+			      <a href="https://facebook.com/#!/romeo.kadaner?ref=bookmarks" class="social-icons"><i class="fa fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	</body>
+</html>

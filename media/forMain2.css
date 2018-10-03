@@ -1,0 +1,19 @@
+@media screen and (orientation: portrait), all and (min-width: 1024px) {
+  body {
+    background-size: cover;
+  }
+  
+  header {
+    width:100%;
+  }
+}
+
+@media screen and (orientation: portrait), all and (min-width: 568px) , (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  
+   header {
+    width:100%;
+  }
+}
