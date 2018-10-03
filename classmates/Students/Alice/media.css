@@ -1,0 +1,65 @@
+@media all and (orientation: portrait), all and (max-width: 568px) {
+  body {
+    background-size:cover;
+  }
+  
+  header {
+    background-color:#8d0d47;
+    opacity:0.90;
+    font-size:90px;
+    height:300px;
+    text-align:center;
+    line-height:3;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .leftPar {
+    margin-top:30%;
+    margin-left:5%;
+    height:700px;
+    width:400px;
+    font-size:20px;
+  }
+  
+  .sl_ctr{
+    margin-top:30%;
+    width:400px;
+    height:700px;
+    margin-left:54%;
+  }
+  
+  .sl_ctr img {
+    width:400px;
+    height:700px;
+  }
+  
+    .content {
+    height:250px;
+  }
+
+  #myFooter .footer-copyright {
+    font-size:30px;
+  }
+  
+  #myFooter ul li em{
+    font-size:35px;
+  }
+  
+  #myFooter .fa {
+    font-size:80px;
+    height: 120px;
+    width: 120px;
+    line-height: 110px;
+    background-color:rgb(141,13,71);
+  }
+  
+  .prv_b, .nxt_b {
+    top:320px;
+  }
+  
+  #myFooter .footer-social{
+    /*background:url("images/header-fon.jpg");*/
+    background:none;
+}
+
+}
